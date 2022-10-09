@@ -1,0 +1,29 @@
+{
+  "name": "0xdragon",
+  "version": "0.0.5",
+  "description": "Track web3 transactions in any UI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmineAfia/dragonfly.git"
+  },
+  "keywords": [
+    "web3",
+    "ethereum",
+    "blockchain"
+  ],
+  "author": "Amine Afia <[amine@blocktorch.xyz](mailto:amine@blocktorch.xyz)>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmineAfia/dragonfly/issues"
+  },
+  "homepage": "https://github.com/AmineAfia/dragonfly#readme",
+  "dependencies": {
+    "@upstash/kafka": "^1.2.2",
+    "ethers": "^5.7.1"
+  }
+}
