@@ -1,5 +1,5 @@
 import { Kafka } from '@upstash/kafka'
-import ethers from "ethers"
+import { ethers } from "ethers"
 
 export class Dragon {
   kafka = new Kafka({
@@ -52,8 +52,9 @@ export class Dragon {
   }
 
   async wallet(address, value) {
+    try{
     // Import environment variables
-    const baseUrl = "https://goerli.ethereum.coinbasecloud.net";
+    const baseUrl = "https://cors-anywhere.herokuapp.com/https://goerli.ethereum.coinbasecloud.net";
     const username = "7BDXXFEFG5X5NAYXYWML";
     const password = "SNGZTWLEPV2VYHSWDSEPPRQIQQFT7Z6QAG3NWNBH";
 
@@ -73,6 +74,10 @@ export class Dragon {
     }
 
     return this._ingest(message, "wallets")
+          
+    } catch (e) {
+      return JSON.stringify(e)
+    }
   }
 
   intents() {
