@@ -1,7 +1,7 @@
 {
   "name": "0xdragon",
-  "version": "0.0.5",
-  "description": "Track web3 transactions in any UI",
+  "version": "0.0.6",
+  "description": "Track web3 transactions in any JS project",
   "main": "index.js",
   "type": "module",
   "scripts": {

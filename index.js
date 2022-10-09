@@ -1,7 +1,7 @@
 import { Kafka } from '@upstash/kafka'
 import ethers from "ethers"
 
-export class Hero {
+export class Dragon {
   kafka = new Kafka({
     url: 'https://distinct-mallard-8932-us1-rest-kafka.upstash.io',
     username: 'ZGlzdGluY3QtbWFsbGFyZC04OTMyJHlygI3oyKeaIdw5j9SIVL6gRCNm1tPTEbk',
@@ -80,7 +80,7 @@ export class Hero {
   }
 }
 
-// const dd = new Hero("contract2", 'someABI')
+// const dd = new Dragon("contract2", 'someABI')
 // // test error
 // const pp = {
 //   transaction: {
